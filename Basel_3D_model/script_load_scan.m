@@ -6,10 +6,10 @@ close all
 [model msz] = load_model();
 
 % Load an example scan
-fns = dir(fullfile( 'C:\F\file\毕业设计\数据集', '02_scans_matlab', '*.mat' ));
+fns = dir(fullfile( 'D:\FDU\小罗\3DMM\dataset', '02_scans_matlab', '*.mat' ));
 for i=1:length(fns)
   fprintf('Loading %s ...\n', fns(i).name);
-  load(fullfile( 'C:\F\file\毕业设计\数据集', '02_scans_matlab', fns(i).name ));
+  load(fullfile( 'D:\FDU\小罗\3DMM\dataset', '02_scans_matlab', fns(i).name ));
 
   % Render it
   rp     = defrp;
