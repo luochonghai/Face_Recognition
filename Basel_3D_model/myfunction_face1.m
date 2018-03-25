@@ -3,7 +3,7 @@ clear all
 close all
 
 [model msz] = load_model();
-load D:/FDU/小罗/3DMM/dataset/s/04_attributes.mat
+load D:/FDU/小罗/3DMM/04_attributes.mat
 
 alpha = randn(msz.n_shape_dim, 1);
 beta  = randn(msz.n_tex_dim, 1);
