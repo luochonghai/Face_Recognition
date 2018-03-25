@@ -2,7 +2,7 @@
 
 %% 1. Load the model and the fitting result file
 [model msz] = load_model();
-load C:\F\file\毕业设计\数据集/07_fittings/pie_lights_fres.mat
+load D:\FDU\小罗\3DMM/07_fittings/pie_lights_fres.mat
 
 %% 2. Get the coefficients
 i = find( id == 4000 & kind(1,:) == 22 & kind(2,:) == 05 );   % Find individual 4000 shot by camera 5 and lighted with flash 18
@@ -30,5 +30,5 @@ rp.sbufsize=2000;
 display_face(shape,tex,model.tl,rp);
 set(h, 'name', ['Fitting result: ' in_img_fn]);
 figure(2)
-image_org=imread('C:\F\file\毕业设计\数据集\PublicMM1\exp\exp\PublicMM1\14_pie_renderings\04000_05_01.ppm');
+image_org=imread('D:\FDU\小罗\BaselFaceModel\PublicMM1\exp\exp\PublicMM1\14_pie_renderings\04000_05_01.ppm');
 imshow(image_org)
