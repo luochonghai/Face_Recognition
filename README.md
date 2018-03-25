@@ -4,7 +4,8 @@ PJ_Of_Face_Recognition
 ----
       Based on tf1.3.0, it's developed for unmanned supermarket & subway turnstiles to improve performance.
       I use The Basel Face Model 2009 to generate training dataset, so that I can train the neural network 
-      without having to take many photos.
+      without having to take many photos.To generate photos in more circumstances, matlab is used to illuminate
+      faces from different angles.
       For more detail, you can view this website:http://gravis.dmi.unibas.ch/PMM/.
 2.Improvement
 ----
