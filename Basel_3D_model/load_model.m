@@ -1,7 +1,7 @@
 function [model msz] = load_model()
   global model;
   if isempty(model);
-    model = load('D:/FDU/–°¬ﬁ/3DMM/01_MorphableModel.mat');
+    model = load('D:/FDU/Â∞èÁΩó/3DMM/01_MorphableModel.mat');
   end
   msz.n_shape_dim = size(model.shapePC, 2);
   msz.n_tex_dim   = size(model.texPC,   2);
