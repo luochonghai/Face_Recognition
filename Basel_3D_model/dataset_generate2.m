@@ -60,11 +60,11 @@ L=camlight('headlight');
 view(180 + angle_x(kk) * 180 / pi , angle_y(jj) * 180 / pi);
 pause(0.1)
 
-% print(1,'-djpeg',['C:\F\file\毕业设计\数据集\PublicMM1\dataset\F',num2str((ii-1)*112+(jj-1)*14+kk),'.jpg']);
-print(1,'-dtiff',['C:\F\file\毕业设计\数据集\PublicMM1\dataset\F',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif']);
-% print(1,'-dpng',['C:\F\file\毕业设计\数据集\PublicMM1\dataset\F',num2str((ii-1)*112+(jj-1)*14+kk),'.png']);
+% print(1,'-djpeg',['D:\FDU\灏忕綏\3DMM\dataset\s',num2str((ii-1)*112+(jj-1)*14+kk),'.jpg']);
+print(1,'-dtiff',['D:\FDU\灏忕綏\3DMM\dataset\s',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif']);
+% print(1,'-dpng',['D:\FDU\灏忕綏\3DMM\dataset\s',num2str((ii-1)*112+(jj-1)*14+kk),'.png']);
 
-f0=imread(['C:\F\file\毕业设计\数据集\PublicMM1\dataset\F',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif']);
+f0=imread(['D:\FDU\灏忕綏\3DMM\dataset\s',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif']);
 f0=im2double(f0);
 f0=rgb2gray(f0);
 [mm,nn]=find(f0~=1);
@@ -109,7 +109,7 @@ f0=imresize(f0,[90,90]);
 f0=f0(8:87,6:85);
 end
 
-imwrite(f0,['C:\F\file\毕业设计\数据集\PublicMM1\dataset\standard2\SS',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif'])
+imwrite(f0,['D:\FDU\灏忕綏\3DMM\dataset\ss',num2str((ii)),'_',num2str((jj-1)*20+kk),'.tif'])
 % P(:,:,(ii-1)*112+(jj-1)*14+kk)=f0;
 % S(ii,(ii-1)*112+(jj-1)*14+kk)=1;
 
