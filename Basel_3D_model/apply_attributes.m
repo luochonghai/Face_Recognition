@@ -6,7 +6,7 @@ rp = defrp;
 i  = 1;
 
 % 2.d Age the face older
-load D:/FDU/–°¬ﬁ/3DMM/04_attributes.mat
+load D:/FDU/Â∞èÁΩó/3DMM/04_attributes.mat
 shape  = coef2object( alpha + 50*age_shape(1:msz.n_shape_dim), model.shapeMU, model.shapePC, model.shapeEV );
 tex    = coef2object( beta  + 50*age_tex(1:msz.n_tex_dim),     model.texMU,  model.texPC,   model.texEV );
 h=figure(i); display_face(shape,tex,model.tl,rp); set(h, 'name', 'Older');
