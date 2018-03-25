@@ -6,3 +6,5 @@ PJ_Of_Face_Recognition
 2.Improvement
 ----
       180314:Migrated from my pj of pulsar detection, I try to input the 3D Basel dataset to train its NN.
+      
+      180325:I successfully input the standford data into the classifier, unluckily the overfitting phenomenon was unacceptable...
